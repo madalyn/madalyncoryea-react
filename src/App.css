@@ -4,11 +4,11 @@ body {
   font-family: "Quicksand";
 }
 h1 {
-  font-family: "Indie Flower";
+  font-family: "Indie Flower", monospace;
   text-align: left;
 }
 .title {
-  font-size: 3em;
+  font-size: 5em;
   color: #00ff81;
 }
 
@@ -26,10 +26,9 @@ h1 {
 .App-header {
   background-color: #1f4e5c;
   min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
   color: white;
+  padding: 25px;
 }
 
 .App-link {
@@ -43,4 +42,14 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.header-photo {
+  height: 200px;
+  width: 200px;
+  border: #61dafb 1px solid;
+}
+
+.header-width {
+  width: 40em;
 }
