@@ -90,7 +90,7 @@ export default function Die({ currentNumber, isDisabled }) {
   };
   return (
     <div
-      className={`d-flex align-items-center border border-dark fixed rounded mr-2 p-2 ${
+      className={`d-flex align-items-center border border-dark fixed rounded mr-2 p-2 size-100px ${
         isDisabled ? "disabled-color" : ""
       }`}
     >

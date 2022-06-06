@@ -1,10 +1,15 @@
 import logo from "./logo.svg";
+import react, { useState } from "react";
 import "./App.css";
 import InfoCard from "./components/InfoCard";
 import HeaderSection from "./components/HeaderSection";
 import Die from "./reusables/Die";
+import MathUtil from "./helpers/MathUtil";
 
 function App() {
+  const [dieOneNumber, updateDieOneNumber] = useState(
+    MathUtil.getRandomInt(1, 7)
+  );
   return (
     <div className="App">
       <header className="App-header">
@@ -51,7 +56,7 @@ function App() {
                 title="Bonko"
                 photoSub={
                   <div className="text-center size-100px">
-                    <Die currentNumber={3} isDisabled={false} />
+                    <Die currentNumber={dieOneNumber} isDisabled={false} />
                   </div>
                 }
                 text="Bonko is a dice-rolling card game I play with my inlaws' family over Christmas. We couldn't play during Covid, so I made a virtual version."
