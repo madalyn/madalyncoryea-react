@@ -4,10 +4,12 @@ body {
   font-family: "Quicksand";
 }
 h1 {
-  font-family: "Indie Flower", monospace;
-  text-align: left;
+  font-family: "Permanent Marker", monospace;
+  text-align: center;
 }
 .title {
+  font-family: "Indie Flower", monospace;
+  text-align: left;
   font-size: 5em;
   color: #00ff81;
 }
@@ -51,5 +53,9 @@ h1 {
 }
 
 .header-width {
-  width: 40em;
+  max-width: 40em;
+}
+
+.page-width {
+  max-width: 75%;
 }
