@@ -9,9 +9,15 @@ h1 {
 }
 .title {
   font-family: "Indie Flower", monospace;
-  text-align: left;
   font-size: 5em;
-  color: #00ff81; /** #53ffdd */
+  text-align: left;
+}
+.title-color {
+  color: #53ffdd; /** #00ff81 #53ffdd */
+}
+.subtitle {
+  font-family: "Indie Flower", monospace;
+  font-weight: bold;
 }
 
 .App-logo {
@@ -60,5 +66,5 @@ h1 {
 }
 
 .border-green {
-  border: 1px solid #00ff81;
+  border: 1px solid #53ffdd;
 }

@@ -30,7 +30,11 @@ function App() {
             </div>
           </div>
           <div className="flex-3">
-            <h1 className="title mb-4 mt-4">Madalyn Coryea</h1>
+            <h1 className="title title-color mb-4 mt-4">Madalyn Coryea</h1>
+            <h2 className="title-color subtitle ">
+              Senior Software Engineer * Boston, MA * {currentExperience} years
+              experience
+            </h2>
             <div className="mt-4 header-width">
               <p>
                 I am a Software Engineer based in Boston, MA with over{" "}
@@ -89,7 +93,12 @@ function App() {
               <h2>Grubhub / LevelUp</h2>
               <h2>Vistaprint</h2>
               <h2>Microsoft / Xamarin</h2>
+            </div>
+          </HeaderSection>
+          <HeaderSection title="Connect">
+            <div>
               <h2>LinkedIn</h2>
+              <p>Let's chat: Find me on LinkedIn.</p>
             </div>
           </HeaderSection>
           <p className="d-none">photo strip at bottom of page.</p>
