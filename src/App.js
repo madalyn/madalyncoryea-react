@@ -6,10 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="d-flex flex-fill justify-content-between">
-          <div className="d-flex w-100 justify-content-center align-items-center">
+          <div className="flex-1 d-flex w-100 justify-content-center align-items-center">
             <div className="header-photo">photo</div>
           </div>
-          <div>
+          <div className="flex-3">
             <h1 className="title mb-4">Madalyn Coryea</h1>
             <div className="mt-4 header-width">
               <p>
