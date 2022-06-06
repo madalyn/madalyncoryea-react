@@ -11,7 +11,7 @@ h1 {
   font-family: "Indie Flower", monospace;
   text-align: left;
   font-size: 5em;
-  color: #00ff81;
+  color: #00ff81; /** #53ffdd */
 }
 
 .App-logo {
@@ -26,7 +26,7 @@ h1 {
 }
 
 .App-header {
-  background-color: #1f4e5c;
+  background-color: #1f4e5c; /** #02536c #444444 #a3a3a3 */
   min-height: 50vh;
   font-size: calc(10px + 1.5vmin);
   color: white;
