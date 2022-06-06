@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import InfoCard from "./components/InfoCard";
+import HeaderSection from "./components/HeaderSection";
 
 function App() {
   return (
@@ -36,10 +37,9 @@ function App() {
           </div>
         </div>
       </header>
-      <div className="w-100 d-flex justify-content-center">
+      <div className="w-100 d-flex justify-content-center mt-4">
         <div className="page-width">
-          <div className="mt-4">
-            <h1>Projects</h1>
+          <HeaderSection title="Projects">
             <div>
               <InfoCard title="Peachplex" text="Developed in College." />
               <InfoCard
@@ -47,18 +47,20 @@ function App() {
                 text="Bonko is a dice-rolling card game I play with my inlaws' family over Christmas. We couldn't play during Covid, so I made a virtual version."
               />
               <InfoCard title="Venice Bells" text="Developed in College." />
-              <InfoCard title="Github" text="Check out my Github" />
+              <InfoCard
+                title="Github"
+                text="Check out my Github, where you can also find the code for this website."
+              />
             </div>
-          </div>
-          <div>
-            <h1>Work Experience</h1>
+          </HeaderSection>
+          <HeaderSection title="Work Experience">
             <div>
               <h2>Grubhub / LevelUp</h2>
               <h2>Vistaprint</h2>
               <h2>Microsoft / Xamarin</h2>
               <h2>LinkedIn</h2>
             </div>
-          </div>
+          </HeaderSection>
           <p>photo strip at bottom of page.</p>
         </div>
       </div>
