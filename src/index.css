@@ -24,3 +24,7 @@ code {
   width: 100px;
   height: 100px;
 }
+
+.round-style {
+  border-radius: 50%;
+}

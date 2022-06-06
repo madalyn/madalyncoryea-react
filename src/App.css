@@ -47,9 +47,8 @@ h1 {
 }
 
 .header-photo {
-  height: 200px;
-  width: 200px;
-  border: #61dafb 1px solid;
+  height: 300px;
+  width: 300px;
 }
 
 .header-width {
@@ -58,4 +57,8 @@ h1 {
 
 .page-width {
   max-width: 75%;
+}
+
+.border-green {
+  border: 1px solid #00ff81;
 }

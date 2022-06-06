@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import react, { useState } from "react";
 import "./App.css";
 import InfoCard from "./components/InfoCard";
@@ -10,25 +9,34 @@ function App() {
   const [dieOneNumber, updateDieOneNumber] = useState(
     MathUtil.getRandomInt(1, 7)
   );
+  const currentYear = new Date().getFullYear();
+  const currentExperience = currentYear - 2012;
+
   return (
     <div className="App">
       <header className="App-header">
-        <div>
+        <div className="d-none">
           <p>Horizontal Layout</p>
           <p>Vertical Layout</p>
         </div>
         <div className="d-flex flex-fill justify-content-between">
           <div className="flex-1 d-flex w-100 justify-content-center align-items-center">
-            <div className="header-photo">photo</div>
+            <div className="header-photo">
+              <img
+                className="w-100 h-100 round-style border-green"
+                src="/images/headshot.jpg"
+                alt={"Madalyn Coryea"}
+              />
+            </div>
           </div>
           <div className="flex-3">
             <h1 className="title mb-4 mt-4">Madalyn Coryea</h1>
             <div className="mt-4 header-width">
               <p>
-                I am a Software Engineer based in Boston, MA with over 8 years
-                experience. Professionally I've done React, C#/.NET, Android,
-                and iOS (but back in the Objective-C days). I'm interested in
-                UX/UI design and front-end work.
+                I am a Software Engineer based in Boston, MA with over{" "}
+                {currentExperience} years experience. Professionally I've done
+                React, C#/.NET, Android, and iOS (but back in the Objective-C
+                days). I'm interested in UX/UI design and front-end work.
               </p>
               <p>
                 I am a Worcester Polytechnic Institute (WPI) Alum. I was the
@@ -50,7 +58,8 @@ function App() {
               <InfoCard
                 title="Peachplex"
                 photo="/images/200x200xpeachplex.png"
-                text="Developed in College."
+                text="Social visual bookmarking website. No longer maintained 
+                (but our parents still use it!). Developed in College, VanillaJS and Django/Python."
               />
               <InfoCard
                 title="Bonko"
@@ -59,12 +68,14 @@ function App() {
                     <Die currentNumber={dieOneNumber} isDisabled={false} />
                   </div>
                 }
-                text="Bonko is a dice-rolling card game I play with my inlaws' family over Christmas. We couldn't play during Covid, so I made a virtual version."
+                text="Bonko is a dice-rolling card game I play with my inlaws' family over Christmas. 
+                We couldn't play during Covid, so I made a virtual version. Created with React and Firebase."
               />
               <InfoCard
                 title="Venice Bells"
                 photo="/images/venice-bells-logo.jpeg"
-                text="Developed in College."
+                text="I lived in Venice for 3 months in 2012 as part of a project to preserve the audio recordings of the campanile. 
+                Venice Bells was the website (only hosted locally now) I developed for this project."
               />
               <InfoCard
                 title="Github"
@@ -81,7 +92,8 @@ function App() {
               <h2>LinkedIn</h2>
             </div>
           </HeaderSection>
-          <p>photo strip at bottom of page.</p>
+          <p className="d-none">photo strip at bottom of page.</p>
+          <p>madalyncoryea.com &copy; {currentYear}</p>
         </div>
       </div>
     </div>
