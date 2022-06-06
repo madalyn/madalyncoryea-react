@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import InfoCard from "./components/InfoCard";
 import HeaderSection from "./components/HeaderSection";
+import Die from "./reusables/Die";
 
 function App() {
   return (
@@ -41,14 +42,28 @@ function App() {
         <div className="page-width">
           <HeaderSection title="Projects">
             <div>
-              <InfoCard title="Peachplex" text="Developed in College." />
+              <InfoCard
+                title="Peachplex"
+                photo="/images/200x200xpeachplex.png"
+                text="Developed in College."
+              />
               <InfoCard
                 title="Bonko"
+                photoSub={
+                  <div className="text-center size-100px">
+                    <Die currentNumber={3} isDisabled={false} />
+                  </div>
+                }
                 text="Bonko is a dice-rolling card game I play with my inlaws' family over Christmas. We couldn't play during Covid, so I made a virtual version."
               />
-              <InfoCard title="Venice Bells" text="Developed in College." />
+              <InfoCard
+                title="Venice Bells"
+                photo="/images/venice-bells-logo.jpeg"
+                text="Developed in College."
+              />
               <InfoCard
                 title="Github"
+                photo="/images/github2.jpeg"
                 text="Check out my Github, where you can also find the code for this website."
               />
             </div>
